@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./kaptius-crop.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calci-Kaptius</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="emoji">
+        <img src="./emoji.png" alt="" />
+      </div>
+      <div class="cal-container">
+        <div class="keypad">
+          <input readonly id="display" placeholder="Please Enter..." />
+          <br />
+          <button onclick="clearDisplay()">C</button>
+          <button onclick="deleteValue()">DEL</button>
+          <button id="multiply" class="operator" onclick="appendToDisplay('*')">
+            *
+          </button>
+          <button id="divide" class="operator" onclick="appendToDisplay('/')">
+            /
+          </button>
+          <br />
+          <button onclick="appendToDisplay('0')">0</button>
+          <button onclick="appendToDisplay('1')">1</button>
+          <button onclick="appendToDisplay('2')">2</button>
+          <button id="subtract" class="operator" onclick="appendToDisplay('-')">
+            -
+          </button>
+          <br />
+          <button onclick="appendToDisplay('3')">3</button>
+          <button onclick="appendToDisplay('4')">4</button>
+          <button onclick="appendToDisplay('5')">5</button>
+          <button id="add" class="operator" onclick="appendToDisplay('+')">
+            +
+          </button>
+          <br />
+          <button onclick="appendToDisplay('6')">6</button>
+          <button onclick="appendToDisplay('7')">7</button>
+          <button onclick="appendToDisplay('8')">8</button>
+          <button id="divide" class="operator" onclick="appendToDisplay('%')">
+            %
+          </button>
+          <br />
+          <button onclick="appendToDisplay('9')">9</button>
+          <button onclick="appendToDisplay('.')">.</button>
+          <button id="equalsBtn" class="operator" onclick="calculateResult()">
+            =
+          </button>
+          <br />
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
