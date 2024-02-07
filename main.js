@@ -16,7 +16,7 @@ function deleteValue() {
 function calculateResult() {
   try {
     inputDisplay.value = eval(inputDisplay.value);
-    if (inputDisplay.value === Infinity || isNaN(inputDisplay.value)) {
+    if (inputDisplay.value == Infinity || isNaN(inputDisplay.value)) {
       alert("Error: Enter a valid expression");
       inputDisplay.value = "";
     }
