@@ -1,18 +1,23 @@
+// accessing the input element of html
 const inputDisplay = document.getElementById("display");
 
+// display input function
 function appendToDisplay(input) {
   inputDisplay.value += input;
 }
 
+// clear display function
 function clearDisplay() {
   inputDisplay.value = "";
 }
 
+// delete input value function - remove input values one by one
 function deleteValue() {
   let currentValue = inputDisplay.value;
   inputDisplay.value = currentValue.substring(0, currentValue.length - 1);
 }
 
+// calculate and display the result & performs Error handling
 function calculateResult() {
   try {
     inputDisplay.value = eval(inputDisplay.value);
